@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+
+  .participants {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .title {
+      font-size: 40px;
+    }
+
+    .line {
+      width: auto;
+      margin: 0 0 20px 0;
+    }
+
+    .list {
+      list-style: none;
+    }
+
+    .participant {
+      font-size: 25px;
+      padding: 10px 10px 10px 0;
+      letter-spacing: 0.5px;
+      cursor: default;
+
+      :nth-child(1) {
+        font-weight: bold;
+        cursor: pointer;
+      }
+      :nth-child(1):hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
