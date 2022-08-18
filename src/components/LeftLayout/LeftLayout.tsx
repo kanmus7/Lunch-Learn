@@ -6,7 +6,9 @@ import agileLogo from "assets/rocket-ae.svg";
 const LeftLayout = () => {
   return (
     <section className={styles.left}>
-      <img className={styles.agileLogo} src={agileLogo} alt="agile engine" />
+      <a href="https://agileengine.com/">
+        <img className={styles.agileLogo} src={agileLogo} alt="agile engine" />
+      </a>
       <div className={styles.container}>
         <img className={styles.pizza} src={pizzaImage} alt="pizza" />
         <h1 className={styles.title}>{"Lunch & Learn"}</h1>
