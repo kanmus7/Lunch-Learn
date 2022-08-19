@@ -24,22 +24,32 @@
     .list {
       list-style: none;
     }
+  }
+}
 
-    .participant {
-      font-size: 25px;
-      padding: 10px 10px 10px 0;
-      letter-spacing: 0.5px;
-      cursor: default;
+.participant {
+  font-size: 25px;
+  padding: 10px 10px 10px 0;
+  letter-spacing: 0.5px;
+  cursor: default;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 
-      .link {
-        color: #ff7a00;
-        font-weight: bold;
-        cursor: pointer;
-        text-decoration: none;
+  .topic {
+    max-width: 650px;
+    .link {
+      color: #ff7a00;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+
+      :nth-child(1) {
+        word-break: break-word;
       }
-      .link:hover {
-        text-decoration: underline;
-      }
+    }
+    .link:hover {
+      text-decoration: underline;
     }
   }
 }

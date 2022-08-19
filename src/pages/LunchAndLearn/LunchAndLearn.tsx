@@ -64,15 +64,17 @@ const LunchAndLearn = () => {
         <ul className={styles.list}>
           {participants.map((participant) => (
             <li key={participant.id} className={styles.participant}>
-              {participant.name} -{" "}
-              <a
-                className={styles.link}
-                href={participant.url}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span>{participant.topic}</span>
-              </a>
+              <span>{participant.name}</span> -
+              <div className={styles.topic}>
+                <a
+                  className={styles.link}
+                  href={participant.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>{participant.topic}</span>
+                </a>
+              </div>
             </li>
           ))}
         </ul>
