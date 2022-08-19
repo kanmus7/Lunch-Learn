@@ -9,8 +9,13 @@ $montserrat-typography: "Montserrat", sans-serif;
   box-sizing: border-box;
 }
 
+html,
 body {
   margin: 0;
+  height: auto;
+}
+
+body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: rgb(251, 251, 251);
